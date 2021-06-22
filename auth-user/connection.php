@@ -9,10 +9,10 @@ require_once 'google-login-api/vendor/autoload.php';
 $google_client = new Google_Client();
 
 //Set the OAuth 2.0 Client ID
-$google_client->setClientId("11608267955-cdlkhfmioh770nsliddosefaec6ieuc0.apps.googleusercontent.com");
+$google_client->setClientId("");
 
 //Set the OAuth 2.0 Client Secret key
-$google_client->setClientSecret("7RjHUy8NoCSxOUi1frdeZGqp");
+$google_client->setClientSecret("");
 
 //Set the OAuth 2.0 Redirect URI
 $google_client->setRedirectUri('http://localhost/Bshop/auth-user/g-callback.php');

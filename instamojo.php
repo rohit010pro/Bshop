@@ -32,8 +32,8 @@ curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 curl_setopt($ch, CURLOPT_HTTPHEADER,
-            array("X-Api-Key:test_b9ac39ffcf95f55d04f95992d6f",
-                  "X-Auth-Token:test_f644b8d9151c75b95f05413dcf9"));
+            array("",
+                  ""));
 $payload = Array(
     'purpose' => "Buying Product",
     'amount' => $totalPrice,
