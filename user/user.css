@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+.user-account-wrapper{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 250px auto;
+}
+
+
+.hello-user-part{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 18px 12px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow:  0 0 3px rgb(182, 182, 182);
+    background-color: #fff;
+}
+.hello-user-part .profile-pic{
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+.hello-user-part .profile-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-option-part{
+    padding: 10px 0;
+    border-radius: 3px;
+    box-shadow:  0 0 3px rgb(182, 182, 182);
+    background-color: #fff;
+}
+.user-option-list li{
+    border-bottom: 1px solid rgb(219, 217, 217);
+}
+.user-option-list li .user-option{
+    display: block;
+    padding: 0 20px;
+    line-height: 45px;
+    color: #000;
+}
+.user-option-list li .user-option:hover{
+    background-color: rgb(236, 236, 236);
+}
+.user-option-list li .user-option i{
+    margin-right: 10px;
+}
+
+.user-account-wrapper .title{
+    margin-bottom: 20px;
+}
+
+.dropdown .dropdown-list{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+.dropdown .dropdown-list a{
+    display: block;
+    line-height: 40px;
+    padding-left: 40px;
+    color: rgb(0, 109, 182);
+}
+
+
+main{
+    padding: 20px 25px;
+    background-color: #fff;
+    box-shadow:  0 0 3px rgb(182, 182, 182);
+}
+
+.form-wrap{
+    max-width: 550px;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .user-account-wrapper{
+        row-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .user-option-list{
+        display: flex;
+        justify-content: center;
+    }
+    .user-option-list li{
+        border: none;
+    }
+    .dropdown{
+        position: relative;
+    }
+    .dropdown .dropdown-list{
+        position: absolute;
+        width: 180px;
+        background-color: #f9f9f9;
+    }
+    .dropdown .dropdown-list a{
+        padding: 0 12px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .user-option-list{
+        column-gap: 15px;
+    }
+    .user-option-list li span{
+        display: none;
+    }
+}

@@ -1,0 +1,111 @@
+#order-section #db-products {
+    grid-template-columns: 1fr;
+}
+#order-section .product {
+  max-width: 800px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#order-section .product-desc {
+  display: flex;
+  column-gap: 30px;
+}
+
+#order-section .order-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#order-section .order-desc span:first-child {
+  color: rgb(65, 63, 63);
+  font-size: 14px;
+}
+#order-section .order-desc span {
+  font-size: 15px;
+  color: #000;
+}
+
+#order-section .more-details a{
+  color: blue;
+  font-size: 14px;
+  cursor: pointer;
+}
+#order-section .more-details a:visited{
+  color: blue;
+}
+
+/*
+#order-section .order-details {
+  position: fixed;
+  width: 80%;
+  height: 380px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  background-color: #f1f1f1;
+  padding: 20px 12px;
+  border-radius: 3px;
+  display: block;
+  box-shadow: 0 0 6px #555;
+}
+#order-section .order-details .close-order-details {
+  position: absolute;
+  padding: 0 10px;
+  font-size: 32px;
+  right: 0;
+  top: 0;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+#order-section .order-details p {
+  margin: 15px 0;
+  font-size: 15px;
+}
+#order-section .order-details p b {
+  margin-right: 6px;
+}
+
+#order-section .order-details .order-product-wrapper {
+  display: flex;
+  column-gap: 20px;
+  height: 100%;
+}
+#order-section .order-details .order-product-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#order-section .order-details .order-product-wrapper .order-product-img {
+  height: 100%;
+  width: 300px;
+}
+ */
+
+@media (max-width: 768px) {
+  #order-section #db-products .product-details .user-options .seperator {
+    display: none;
+  }
+
+  #order-section #db-products .product-details .user-options {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-start;
+  }
+
+  #order-section #db-products .product-details {
+    row-gap: 15px;
+  }
+}
+@media (max-width: 576px) {
+  #order-section .product {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  #order-section .order-desc {
+    row-gap: 12px;
+  }
+}

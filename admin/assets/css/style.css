@@ -1,0 +1,151 @@
+.section {
+  padding: 20px;
+  min-height: 90vh;
+}
+
+.sec-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sec-heading {
+  font-size: 32px;
+}
+
+  /* ###  Table   ### */
+.table-wrapper{
+  overflow-x: auto; 
+  padding-bottom:20px;
+}
+
+.table {
+  min-width: 600px;
+}
+.table,th,td{
+  border: 1px solid rgb(211, 211, 211);
+  border-collapse: collapse;
+}
+.table th {
+  padding: 10px;
+  color: #fff;
+  background-color: #333;
+  font-weight: 500;
+}
+.table td {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.table td:last-child a {
+  margin-right: 4px;
+}
+.table tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.action-btns{
+  white-space: nowrap;
+}
+.table td p{
+  margin-bottom: 6px;
+}
+.table td p:last-child{
+  margin: 0;
+}
+
+
+/* Order Table  */
+.multipe-product{
+  white-space: nowrap;
+}
+.multipe-product p{
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #bbb;
+}
+.multipe-product p:last-child{
+  border: none;
+}
+
+
+/* Product Info Form */
+#product-info #grid-wrapper {
+  display: grid;
+  grid-template-columns: auto 350px;
+  gap: 10px 30px;
+}
+
+#product-info #first {
+  display: grid;
+  row-gap: 10px;
+}
+#product-info #type {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+#product-info #numbers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+#product-info #second .image-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 10px;
+  gap: 10px;
+}
+#product-info #second img{
+  height: 120px;
+  width: 80px;
+  object-fit: contain;
+}
+
+#product-info #third{
+  grid-column: 1 / 3;
+}
+
+
+
+/* Site Settings */
+#site-settings{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 50px;
+}
+#site-settings .third{
+  grid-column: 1 / 3;
+}
+
+.title-logo{
+  height: 80px;
+  width: 80px;
+  margin-top: 20px;
+}
+.site-logo{
+  width: 220px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width:992px){
+  #product-info #grid-wrapper{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  #product-info #third{
+    grid-column: 1 / 2;
+  }
+
+  #site-settings{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  #site-settings .third{
+    grid-column: 1 / 2;
+  }
+}

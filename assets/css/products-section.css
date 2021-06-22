@@ -1,0 +1,230 @@
+
+/* ###   Products Setion Stylsheet    ### */
+
+.owl-nav button,
+.owl-dots .owl-dot {
+  border: 0;
+  outline: 0;
+}
+
+/* ###  Banner Section Start ### */
+
+#banner-section .owl-nav {
+  display: block;
+}
+#banner-section .owl-nav .owl-prev {
+  left: -5px;
+}
+#banner-section .owl-nav .owl-next {
+  right: -5px;
+}
+#banner-section .owl-nav .owl-prev,
+#banner-section .owl-nav .owl-next {
+  position: absolute;
+  top: 30%;
+}
+#banner-section .owl-nav .owl-prev span,
+#banner-section .owl-nav .owl-next span {
+  padding: 0 10px 5px 10px;
+  color: #000;
+  font-size: 60px;
+  box-shadow: 0 0 5px #d3cdcd, 0 0 5px #d3cdcd;
+  background-color: #fff;
+}
+/* ###  Banner Section End ### */
+
+
+/* ### Products Slider Start ### */
+
+.products-slider .container{
+  margin: 20px auto 0 auto;
+}
+.products-slider .container .sub-heading{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.products-slider .owl-dots {
+  display: none;
+}
+.products-slider .owl-nav {
+  margin: 0;
+}
+.products-slider .owl-nav .owl-prev {
+  left: -5px;
+}
+.products-slider .owl-nav .owl-next {
+  right: -5px;
+}
+.products-slider .owl-nav .owl-prev,
+.products-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 30%;
+}
+.products-slider .owl-nav .owl-prev span,
+.products-slider .owl-nav .owl-next span {
+  padding: 0 8px 5px 8px;
+  color: rgb(83, 76, 76);
+  font-size: 45px;
+  box-shadow: 0 0 1px gray, 0 0 1px gray;
+  background-color: #fff;
+}
+
+.products-slider .owl-nav .owl-next span:hover,
+.products-slider .owl-nav .owl-prev span:hover{
+  background-color: rgb(219, 219, 219);
+}
+
+.products-slider .owl-carousel .owl-stage-outer {
+  padding: 10px;
+}
+
+.products-slider .owl-carousel .item {
+  padding: 10px 4px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 3px #d3cdcd, 0 0 3px #d3cdcd;
+}
+.products-slider .owl-carousel .item:last-child{
+  margin-right: 20px;
+}
+
+/* Product Brand Image */
+.products-slider .owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Product Brand Name */
+.products-slider .owl-carousel .item .brand {
+  color: #000;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Product Price */
+.products-slider .owl-carousel .item .price {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(97, 96, 96);
+  font-weight: 300;
+}
+
+/* ### Products Slider End ### */
+
+
+
+
+/* ####   One Product Detail START   #### */
+
+.one-product-details .product-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 50px;
+}
+
+.one-product-details .product-img {
+  min-width: 450px;
+  max-width: 450px;
+  width: 100%;
+  height: 550px;
+  /* padding: 15px; */
+}
+
+.one-product-details .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.one-product-details .product-details .name {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.one-product-details .product-details .brand {
+  font-size: 18px;
+  text-align: left;
+  margin: 10px 0 30px 0;
+}
+
+.one-product-details .product-details .description {
+  margin: 40px 0 20px 0 ;
+}
+
+.description *{
+  margin: auto;
+  padding: auto;
+}
+.description ul li,
+.description ol li{
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.one-product-details .product-details .price{
+  color: rgb(243, 65, 0);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.one-product-details .product-details .buttons{
+  margin: 40px 0 0 0;
+  display: flex;
+  gap: 15px;
+}
+
+.one-product-details .product-details .notinstock{
+  color: var(--error-color);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* ####  One  Product Detail END   #### */
+
+
+/* ### Ordered Product START */
+
+#order-details-section .order-details {
+  margin-top: 40px;
+}
+#order-details-section .order-details p{
+   margin: 15px 0;
+}
+#order-details-section .order-details p span{
+   font-weight: 600;
+   /* font-size: 18px; */
+   margin-right: 6px;
+   color: #000;
+}
+#order-details-section .order-details .total{
+   margin-top: 30px;
+   font-size: 22px;
+}
+
+
+/* ### Ordered Product END */
+
+
+
+/* ###  Media Queries  ### */
+@media screen and (max-width: 992px) {
+  .one-product-details .product-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .one-product-details .product-details {
+    padding: 0 10px;
+  }
+}

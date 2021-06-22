@@ -1,0 +1,94 @@
+/*
+  * ### For Form Style ###  
+*/
+
+#logo {
+  margin: 40px auto;
+  text-align: center;
+}
+#logo a {
+  user-select: none;
+  color: #000;
+  font-size: 36px;
+  font-weight: 800;
+  font-family: Montserrat, Arial, sans-serif;
+}
+#logo img{
+  height: 50px;
+  width: 180px;
+}
+
+/* Alerts */
+.alert {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+}
+.danger {
+  color: #fff;
+  background-color: var(--error-color);
+}
+.success {
+  color: #fff;
+  background-color: var(--success-color);
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.form-box {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 15px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+}
+
+.form-box .title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-box .info {
+  padding: 10px 5px;
+  line-height: 1.5;
+}
+
+.form-box #foot {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.form-box #foot a {
+  color: blue;
+}
+
+.form-box .button {
+  width: 100%;
+  text-align: center;
+}
+
+.forgot-pswd {
+  display: inline-block;
+  margin-top: 8px;
+  color: blue;
+}
+
+.google-login-btn {
+  margin-top: 8px;
+  text-align: center;
+  background-color: #ff311e;
+}
+.google-login-btn:hover {
+  background-color: #ff311e;
+}
+.google-login-btn i {
+  margin-right: 10px;
+}

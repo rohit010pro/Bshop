@@ -1,0 +1,123 @@
+#rate-product .product-wrapper {
+    display: flex;
+    column-gap: 80px;
+}
+
+#rate-product .product-image{
+    height: 300px;
+    width: 250px;
+}
+#rate-product .product-image h1{
+    margin-bottom: 15px;
+}
+#rate-product .product-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#rate-product .rating-part{
+    padding:0 15px;
+    flex-grow: 1;
+}
+
+#rate-product .rating-part h1{
+    margin-bottom: 30px;
+}
+
+#rate-product .rating-content{
+    display: flex;
+    column-gap: 80px;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+}
+
+#rate-product .show-stars-wrapper{
+    margin: 15px auto;
+    cursor: auto;
+}
+#rate-product .show-stars-wrapper::after{
+    content: "";
+}
+#rate-product .show-stars-wrapper .star{
+    margin: 0;
+}
+#rate-product .show-stars-wrapper .star i{
+    font-size: 16px;
+}
+
+#rate-product .single-star-rating .progress-bar{
+    width: 180px;
+}
+
+#rate-product .button{
+    margin-top: 40px;
+    padding: 10px 40px;
+    border: none;
+}
+
+/* Rating Box */
+#user-rating{
+    padding-top: 70px;
+}
+#user-rating .rate-stars-wrapper{
+    margin:0;
+}
+#user-rating #rate-form{
+    margin-top: 30px;
+}
+
+
+
+/* User Reviews Section */
+#product-review{
+    margin-top: 40px; 
+    border-top:1px solid gray;
+    margin-bottom: 300px;
+}
+#product-review .user-review{
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(202, 200, 200);
+    max-width: 600px;
+    width: 100%;
+}
+
+#product-review .user-review p{
+    margin-top: 15px;
+}
+
+#product-review .user-review .profile-pic {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+#product-review .user-review .profile-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+#product-review .user-review .user-name-pic{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#product-review .user-review .show-stars-wrapper{
+    cursor: auto;
+}
+#product-review .user-review .show-stars-wrapper::after{
+    content: "";
+}
+
+
+@media screen and (max-width:768px) {
+    #rate-product .product-wrapper{
+        row-gap: 40px;
+        flex-direction: column;
+    }
+}

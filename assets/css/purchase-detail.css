@@ -1,0 +1,38 @@
+body{
+    background-color: #fff;
+}
+header{
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+header .container{
+    margin:0 auto;
+    padding: 0 20px;
+}
+header #logo a {
+    color: #000;
+    user-select: none;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+#user-detail-wrapper {
+    max-width: 600px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+/* #user-detail-wrapper .input-field label{
+    font-weight: 600;
+    font-size: 15px;
+} */
+
+#purchase-detail{
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    /* box-shadow: 0 0 3px gray; */
+}
+#purchase-detail #db-products{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
